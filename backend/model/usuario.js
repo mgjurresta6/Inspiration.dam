@@ -28,10 +28,10 @@ esquemaUsuario.methods.generateJWT =function (){
         _id: this._id,
         nombre: this.nombre,
         email: this.email,
-    }, "clave")
+    }, "pass")
 }
 
 //Creacion de exports
 const Usuario = mongoose.model("usuario", esquemaUsuario);
-module.exports.Usuario = Usuario;
+module.exports = Usuario;
 module.exports.esquemaUsuario = esquemaUsuario;

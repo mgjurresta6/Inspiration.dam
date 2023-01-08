@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 
 //Esquema
 const esquemaPublicacion = new mongoose.Schema({
-        nombre:{
+        idUsuario:{
             type: String,
         },
         titulo:{
@@ -23,5 +23,5 @@ const esquemaPublicacion = new mongoose.Schema({
 
 //Creacion de exports
 const Publicacion = mongoose.model("publicacion", esquemaPublicacion);
-module.exports.Publicacion = Publicacion;
+module.exports = Publicacion;
 module.exports.esquemaPublicacion = esquemaPublicacion;
