@@ -1,1 +1,24 @@
-<p>publicar works!</p>
+
+<div class="col-lg-4 mx-auto">
+    <div class="card">
+    <div class="card-header">
+        Subir Archivos
+    </div>
+    <div class="card-body">
+        <form (submit)="enviarFoto(titulo, Descripcion)">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Titutlo Del Archivo" required #titulo>
+            </div>
+            <div class="form-group">
+                <textarea rows="2" class="form-control" placeholder="Descripcion Archivo" required #Descripcion></textarea>
+            </div>
+            <input type="file" class="d-none" (change)= "onfotoSelecionada($event)"#fotoInput>
+            <img [src]= "photoSelected ||'assets/NoImagen.png'" class="img-fluid" alt="NoImagen"    (click) ="fotoInput.click()">
+
+            <button class="btn btn-primary btn-block">
+                Enviar
+            </button>
+        </form>
+    </div>
+    </div>
+</div>
