@@ -9,7 +9,7 @@ const routes: Routes = [
   {
     path: '',
     component: LoginComponent,
-    pathMatch: 'full',  
+    pathMatch: 'full',
   },
   {
     path: 'verPublicaciones',
