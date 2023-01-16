@@ -16,16 +16,16 @@ const routes: Routes = [
     component: PublicacionesComponent,
   },
   {
-    path: 'subirPublicaciones',
-    component: PublicarComponent,
-  },
-  {
     path: 'login',
     component: LoginComponent,
   },
   {
     path: 'registro',
     component: RegistroComponent,
+  },
+  {
+    path: 'subir',
+    component: PublicarComponent,
   }
 ];
 
