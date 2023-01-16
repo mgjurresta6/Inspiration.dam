@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: #31546e;">
-    <div class="container">
-      <a class="navbar-brand" routerLink="/fotos" >INSPIRATION.DAM</a>
-      <button
+  <div class="container">
+    <a class="navbar-brand" routerLink="verPublicaciones" >INSPIRATION.DAM</a>
+    <button
         class="navbar-toggler"
         type="button"
         data-bs-toggle="collapse"
@@ -10,43 +10,35 @@
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" routerLink="">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="subirPublicaciones">Subir </a>
-          </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              routerLink="ranking"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false">
-              TOP 10
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><hr class="dropdown-divider" /></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-          </ul>
-        <form class="d-flex" role="search">
-          <input
-            class="form-control me-2"
-            type="search"
-            placeholder="Search"
-            aria-label="Search"
-          />
-          <button class="btn btn-outline-success" style="background-color: #b62e29;" type="submit">Search </button>
-        </form>
-      </div>
-    </div>
-  </nav>
-  
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <mat-toolbar color="primary">
+      <ul>
+          <a style="text-decoration: none;color: black;" routerLink="subirPublicaciones">Publicar</a>
+      </ul>
+      <ul>
+          <a style="text-decoration: none;color: black;" routerLink="verPublicaciones">Inicio</a>
+      </ul>
+      <ul>
+          <a style="text-decoration: none;color: black;" routerLink="login">Iniciar sesion</a>
+      </ul>
+      <ul>
+          <a style="text-decoration: none; color: black;" routerLink="registro">Registrarse</a>
+      </ul>
+      <ul>
+        <a
+        style="text-decoration: none; color: black;"
+        class="nav-link dropdown-toggle"
+        routerLink="ranking"
+        role="button"
+        data-bs-toggle="dropdown"
+        aria-expanded="false">
+        TOP 10
+      </a>
+      </ul>
+      <ul>
+        <button class="btn btn-outline-success" style="background-color: #b62e29;" type="submit">Search </button>
+      </ul>
+      </mat-toolbar>     
+  </div>
+</nav>
