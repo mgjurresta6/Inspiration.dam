@@ -1,0 +1,11 @@
+.cuadro{
+    font-family: Brush Script MT;
+    background: aqua;
+    width: 30%;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+    padding: 50px;
+    border-radius: 20px;
+    font-size: 30px;
+}
