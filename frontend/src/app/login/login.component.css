@@ -1,11 +1,32 @@
-.cuadro{
+.container{
+    display: flex;
+    flex-direction: column;
     font-family: Brush Script MT;
-    background: aqua;
+    background: rgb(85, 144, 212);
     width: 30%;
     height: auto;
     margin: 0 auto;
     text-align: center;
     padding: 50px;
     border-radius: 20px;
-    font-size: 30px;
+}
+
+.button{
+    width: 100%;
+}
+.card{
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+}
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+mat-card-title{
+    text-align: center;
+}
+.col{
+    background-color: blueviolet;
 }
